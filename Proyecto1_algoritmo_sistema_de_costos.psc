@@ -79,7 +79,7 @@ Algoritmo CalcularCostoProducto
 	costoFinal = precioCantidad +costoEnvioTotal
 	
 	// Mostrar resultados
-	Escribir "Costo Final del producto:"
+	Escribir "COSTO FINAL DEL PRODUCTO"
 	Escribir "Precio con descuento:", PrecioDescuento
 	Escribir "Precio con impuestos:", precioImpuestos
 	Escribir "Precio con descuento por cantidad", precioCantidad
