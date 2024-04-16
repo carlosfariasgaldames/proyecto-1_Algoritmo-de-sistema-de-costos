@@ -52,12 +52,12 @@ Algoritmo CalcularCostoProducto
 	FinPara
 	Leer destino
 	
-	// Convertir el costo de en envío a numero
+	// Convertir el costo de en envÃ­o a numero
 	
 	cadenaCostoEnvio <- destinos[destino,2] //Almacenar el valor del arreglo en una variable de tipo de cadena
 	costoEnvio <- convertirANumero(cadenaCostoEnvio) // convertir la cadena de caracteres a numero
 	
-	//Cálculos
+	//CÃ¡lculos
 	
 	Si descuento > 0 Entonces
 		precioDescuento = precioOriginal - (precioOriginal * (descuento/ 100))
@@ -69,8 +69,12 @@ Algoritmo CalcularCostoProducto
 	precioImpuestos  = precioDescuento * (1 + (iva / 100))
 	
 	si cantidad > 1 Entonces
+		precioCantidad = (precioImpuestos - (precioImpuestos * (5 / 100))) * cantidad
+          SiNo
 		precioCantidad = precioImpuestos
 	FinSi
+
+       costoEnvioTotal = costoEnvio + (peso * 5)
 	
 	costoFinal = precioCantidad +costoEnvioTotal
 	
