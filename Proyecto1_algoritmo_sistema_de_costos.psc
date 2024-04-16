@@ -1,4 +1,4 @@
-Algoritmo CalcularCostoProducto
+Algoritmo CalcularCostodeunProducto
 	
 	
 	//Declaracion de variables
